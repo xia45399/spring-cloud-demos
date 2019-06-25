@@ -1,0 +1,9 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      profile: default
+      uri: http://localhost:9001
