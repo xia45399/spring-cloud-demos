@@ -23,6 +23,8 @@
         <module>spring-cloud-config-server-demo</module>
         <module>spring-cloud-config-client-demo</module>
         <module>spring-cloud-eureka-demo</module>
+        <module>spring-cloud-service-demo</module>
+        <module>spring-cloud-consumer-demo</module>
     </modules>
 
     <dependencyManagement>
