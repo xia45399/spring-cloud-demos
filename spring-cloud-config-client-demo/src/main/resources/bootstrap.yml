@@ -7,3 +7,9 @@ spring:
     config:
       profile: default
       uri: http://localhost:9001
+#      uri: ${SPRING_CONFIG_URI:http://localhost:9001}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info
