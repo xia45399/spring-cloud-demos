@@ -3,6 +3,13 @@ server:
 spring:
   application:
     name: spring-cloud-config-server-demo
+  rabbitmq:
+    host: localhost
+    virtual-host: spring-cloud-bus
+    username: admin
+    password: admin
+  profiles:
+    active: native
   cloud:
     config:
       server:
@@ -15,6 +22,10 @@ spring:
 #          search-locations:
 #  profiles:
 #    active: native
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: actuator
 
 

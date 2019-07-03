@@ -7,6 +7,11 @@ spring:
     config:
       profile: default
       uri: http://localhost:9001
+  rabbitmq:
+    host: localhost
+    virtual-host: spring-cloud-bus
+    username: admin
+    password: admin
 #      uri: ${SPRING_CONFIG_URI:http://localhost:9001}
 management:
   endpoints:
