@@ -2,7 +2,7 @@ server:
   port: 9000
 spring:
   application:
-    name: spring-cloud-eureka-demo
+    name: spring-cloud-eureka-server-demo
 eureka:
   instance:
     hostname: localhost
