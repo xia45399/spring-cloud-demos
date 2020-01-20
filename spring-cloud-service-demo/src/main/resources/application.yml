@@ -11,4 +11,4 @@ eureka:
 #    hostname: localhost
   client:
     service-url:
-      http://localhost:9000/eureka #defaultZone 设置的是与Eureka Server的交互地址，查询和注册服务都依赖这个地址，如果有多个可以使用英文逗号分隔。
+      defaultZone: http://localhost:9000/eureka #defaultZone 设置的是与Eureka Server的交互地址，查询和注册服务都依赖这个地址，如果有多个可以使用英文逗号分隔。
