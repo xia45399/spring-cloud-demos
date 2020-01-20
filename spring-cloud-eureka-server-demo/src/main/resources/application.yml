@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: spring-cloud-eureka-server-demo
+  security:
+    user:
+      name: test
+      password: 123456
 eureka:
   instance:
     prefer-ip-address: true #表示将自己的ip注册到Eureka Server上，如果是false的话会显示hostname而不是ip地址。
@@ -11,4 +15,4 @@ eureka:
     register-with-eureka: true #是否将eureka自身作为应用注册到eureka注册中心 默认为true
     fetch-registry: false # 表示是否从Eureka Server获取注册信息，默认为true。本例是单点的Eureka Server，不需要同步其他Eureka Server节点数据，所以设置为false.为true时，可以启动，但报异常：Cannot execute request on any known server
     service-url:
-      defaultZone: http://localhost:9000/eureka #defaultZone 设置的是与Eureka Server的交互地址，查询和注册服务都依赖这个地址，如果有多个可以使用英文逗号分隔。
+      defaultZone: http://test:123456@localhost:9000/eureka #defaultZone 设置的是与Eureka Server的交互地址，查询和注册服务都依赖这个地址，如果有多个可以使用英文逗号分隔。
