@@ -1,4 +1,4 @@
-package com.summer.springcloud.eureka.demo;
+package com.summer.springcloud.eureka.server.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
