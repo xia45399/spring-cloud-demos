@@ -4,7 +4,6 @@ import com.summer.springboot.service.demo.service.HelloService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -15,12 +14,9 @@ import javax.annotation.Resource;
 public class ServiceDemo {
     @Resource
     private HelloService helloService;
+
     public static void main(String[] args) {
         SpringApplication.run(ServiceDemo.class, args);
     }
 
-    @RequestMapping("/hello")
-    public String hello(){
-        return helloService.hello();
-    }
 }
