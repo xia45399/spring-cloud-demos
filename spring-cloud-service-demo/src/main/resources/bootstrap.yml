@@ -4,7 +4,10 @@ spring:
   cloud:
     config:
       profile: dev
-      uri: http://localhost:9001
+      discovery: #从注册中心寻找配置中心
+        enabled: true
+        service-id: spring-cloud-config-server-demo
+#      uri: http://localhost:9001  #配置中心地址
 
 ################## 注册中心配置 ##################
 eureka:
