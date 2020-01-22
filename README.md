@@ -1,4 +1,4 @@
-## spring cloud demo
+## spring cloud demo:
 
 spring-cloud-eureka-server-demo 注册中心
 
@@ -16,5 +16,5 @@ spring-cloud-consumer-demo 服务消费者
 实现配置文件动态刷新
 
 
-## 疑问
+## 疑问:
 各应用只配置注册中心地址,mq配置信息能写到配置中心吗？

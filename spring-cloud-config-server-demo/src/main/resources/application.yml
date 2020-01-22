@@ -3,29 +3,35 @@ server:
 spring:
   application:
     name: spring-cloud-config-server-demo
-  rabbitmq:
-    host: localhost
-    virtual-host: spring-cloud-bus
-    username: admin
-    password: admin
+
+################## 配置中心配置 ##################
   profiles:
-    active: native
+    active: native #读取本地配置文件
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/xia45399/spring-cloud-demos
-          search-paths: config
-          username:
-          password:
-#        native:
-#          search-locations:
-#  profiles:
-#    active: native
+#        git:
+#          uri: https://github.com/xia45399/spring-cloud-demos
+#          search-paths: config
+#          username:
+#          password:
+        native:
+          search-locations: classpath:/configs #本地配置文件路径
+################## 配置中心配置 ##################
+
+################## 注册中心配置 ##################
+eureka:
+  instance:
+    prefer-ip-address: true #表示将自己的ip注册到Eureka Server上，如果是false的话会显示hostname而不是ip地址。
+  #    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://test:123456@localhost:9000/eureka #defaultZone 设置的是与Eureka Server的交互地址，查询和注册服务都依赖这个地址，如果有多个可以使用英文逗号分隔。
+################## 注册中心配置 ##################
+
+
 management:
   endpoints:
     web:
       exposure:
         include: actuator
-
-

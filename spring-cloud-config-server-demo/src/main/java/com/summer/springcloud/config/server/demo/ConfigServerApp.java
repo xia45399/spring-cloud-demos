@@ -1,4 +1,4 @@
-package com.summer.springcloud.configserver.demo;
+package com.summer.springcloud.config.server.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 
 @EnableConfigServer
 @SpringBootApplication
-public class ConfigServerApplication {
+public class ConfigServerApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConfigServerApplication.class, args);
+        SpringApplication.run(ConfigServerApp.class, args);
     }
 
 }
