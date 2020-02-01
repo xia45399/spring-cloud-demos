@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class ConsumerApplication {
+public class ConsumerApp {
 
     @Bean
     @LoadBalanced
@@ -18,6 +18,6 @@ public class ConsumerApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(ConsumerApplication.class, args);
+        SpringApplication.run(ConsumerApp.class, args);
     }
 }

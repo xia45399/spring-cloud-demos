@@ -11,12 +11,12 @@ import javax.annotation.Resource;
 @RestController
 @EnableDiscoveryClient
 @SpringBootApplication
-public class ServiceDemo {
+public class ServiceApp {
     @Resource
     private HelloService helloService;
 
     public static void main(String[] args) {
-        SpringApplication.run(ServiceDemo.class, args);
+        SpringApplication.run(ServiceApp.class, args);
     }
 
 }
