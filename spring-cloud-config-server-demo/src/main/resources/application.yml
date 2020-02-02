@@ -3,7 +3,6 @@ server:
 spring:
   application:
     name: spring-cloud-config-server-demo
-
 ################## 配置中心配置 ##################
   profiles:
     active: native #读取本地配置文件
@@ -18,6 +17,14 @@ spring:
         native:
           search-locations: classpath:/configs #本地配置文件路径
 ################## 配置中心配置 ##################
+################## 配置中心 rabbitMq 配置 ##################
+  rabbitmq:
+    host: localhost
+    virtual-host: spring-cloud-bus
+    username: test
+    password: test
+################## 配置中心 rabbitMq 配置 ##################
+
 
 ################## 注册中心配置 ##################
 eureka:
@@ -34,4 +41,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: actuator
+        include: actuator,bus-refresh,health,info

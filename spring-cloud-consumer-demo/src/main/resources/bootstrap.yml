@@ -8,6 +8,14 @@ spring:
         enabled: true
         service-id: spring-cloud-config-server-demo
 #      uri: http://localhost:9001  #配置中心地址
+################## 配置中心 rabbitMq 配置 ##################
+  rabbitmq:
+    host: localhost
+    virtual-host: spring-cloud-bus
+    username: test
+    password: test
+################## 配置中心 rabbitMq 配置 ##################
+
 
 ################## 注册中心配置 ##################
 eureka:
