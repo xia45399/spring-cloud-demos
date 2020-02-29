@@ -9,6 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>spring-cloud-service-demo</artifactId>
+    <name>spring-cloud-service-demo</name>
     <description>服务提供者</description>
 
     <properties>

@@ -9,6 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>spring-cloud-eureka-server-demo</artifactId>
+    <name>spring-cloud-eureka-server-demo</name>
     <description>注册中心</description>
 
     <dependencies>

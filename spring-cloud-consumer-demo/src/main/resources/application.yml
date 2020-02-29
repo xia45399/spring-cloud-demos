@@ -5,7 +5,13 @@ spring:
   application:
     name: spring-cloud-consumer-demo
 
+
+################## 注册中心配置 ##################
 eureka:
+  instance:
+    prefer-ip-address: true #表示将自己的ip注册到Eureka Server上，如果是false的话会显示hostname而不是ip地址。
+  #    hostname: localhost
   client:
     service-url:
-      defaultZone: http://localhost:9000/eureka
+      defaultZone: http://test:123456@localhost:9000/eureka #defaultZone 设置的是与Eureka Server的交互地址，查询和注册服务都依赖这个地址，如果有多个可以使用英文逗号分隔。
+################## 注册中心配置 ##################

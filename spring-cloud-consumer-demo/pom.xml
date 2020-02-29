@@ -9,6 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>spring-cloud-consumer-demo</artifactId>
+    <name>spring-cloud-consumer-demo</name>
     <description>消费者</description>
 
     <properties>

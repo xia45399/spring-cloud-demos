@@ -8,7 +8,6 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>spring-cloud-config-server-demo</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <name>spring-cloud-config-server-demo</name>
     <description>配置中心</description>
 
